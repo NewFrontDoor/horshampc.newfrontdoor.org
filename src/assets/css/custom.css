@@ -1,0 +1,50 @@
+.bg-color-custom
+{
+    background-color: #cfebff;
+}
+
+@media (max-width: 767px) {
+  
+    .nestor-main-menu .navbar-toggle {
+      border: 1px solid #2588c9 !important;
+      background: #91c2e3 !important;
+      color: #000 !important;
+    }
+}
+
+.sermon-search-button {
+    padding: 2px 35px !important;
+    border-color: #65AAD5;
+    color: #65AAD5;
+  }
+  
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    border-color: #2588c9 !important;
+    background-color: #2588c9 !important;
+  }
+  
+  .btn-primary{
+    border-color: #2588c9;
+  }
+
+
+/*Fix for overflowing text on gmaps*/
+.gm-style-iw {
+    width: auto !important;
+    max-width: 180px;
+    text-align: center;
+   }
+
+   
+/*Font color for gmap in footer*/
+   #content-map-footer>h4{
+    color: #2b2b2b;
+   }
+   #content-map-footer>p{
+    color: #777;
+   }
+
+   /*Hide map type toggle and street view selection from footer map*/
+   #map_canvas_footer>div>div> .gm-style-mtc , #map_canvas_footer>div>div>div>.gm-svpc{
+       display: none;
+   }   
