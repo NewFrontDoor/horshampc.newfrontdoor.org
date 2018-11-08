@@ -20,12 +20,12 @@ class Footer extends Component {
 
                     <div className="content">
                       <div className="footer-address text-center">
-                        {/*<i className="icon ion-ios7-location-outline size-32 margin-bottom-20"></i>*/}
-                        <div style={{ width: "75%", margin: "0 auto", paddingBottom: "15px" }}>
+                        <i className="icon ion-ios7-location-outline size-32 margin-bottom-20"></i>
+                        {/*<div style={{ width: "75%", margin: "0 auto", paddingBottom: "15px" }}>
                           <GoogleMap id="map_canvas_footer" height="200px" width="200px"></GoogleMap>
-                        </div>
+                        </div>*/}
                         <p>
-                          <a href="https://goo.gl/maps/ska8Gp68jUG2">16 Kalkee Rd</a>,<br />
+                          <a href="https://goo.gl/maps/ska8Gp68jUG2" target="_blank" rel="noopener noreferrer">16 Kalkee Rd</a>,<br />
                           Horsham, Victoria 3400
                         </p>
                       </div> {/* /footer-address */}  </div>

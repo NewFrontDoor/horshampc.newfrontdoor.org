@@ -48,3 +48,9 @@
    #map_canvas_footer>div>div> .gm-style-mtc , #map_canvas_footer>div>div>div>.gm-svpc{
        display: none;
    }   
+
+
+/* Text color*/
+body{
+  color: #000;
+}

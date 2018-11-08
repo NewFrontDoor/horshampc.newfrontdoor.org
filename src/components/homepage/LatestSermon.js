@@ -70,7 +70,7 @@ class LatestSermon extends Component {
     return (
       <section>
         <div className="col-md-4 col-xs-12">  <div className="region region-content-2-1">
-          <div className="block block-views">
+          <div className="block block-views text-center">
             <h2 className="header-lightBlue">Latest Sermon</h2>
             {sermonDetails}
           </div>

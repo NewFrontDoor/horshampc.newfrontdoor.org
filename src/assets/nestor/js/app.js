@@ -92,7 +92,7 @@
       
       var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
       
-      var companyLogo = new google.maps.MarkerImage(nestor_base_url + '/sites/summerleaschurch.org/themes/nestor/img/google-maps/map-marker.png',
+      var companyLogo = new google.maps.MarkerImage(nestor_base_url + '/img/google-maps/map-marker.png',
                                                     new google.maps.Size(20,30),
                                                     new google.maps.Point(0,0),
                                                     new google.maps.Point(10,30));

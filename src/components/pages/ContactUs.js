@@ -69,7 +69,7 @@ class ContactUs extends Component {
 
     var contactForm = (
       <section>
-
+        <em>The form below is merely a placeholder for the moment.</em>
         <div id="block-block-54" className="block block-block">
           <form onSubmit={this.handleSubmit}><div><div className="form-item form-group form-type-textfield form-item-name">
             <label htmlFor="edit-name">Your name <span className="form-required" title="This field is required.">*</span></label>
@@ -90,8 +90,9 @@ class ContactUs extends Component {
 
             <div className="form-actions form-wrapper" id="edit-actions"><input className="btn btn-primary btn-sm form-submit" type="submit" id="edit-submit" name="submit" value="Send message" /></div></div>
           </form>
+          <p><strong><span dangerouslySetInnerHTML={{ __html: this.state.formErrorMessage }} /> </strong></p>
         </div>
-        <p><strong><span dangerouslySetInnerHTML={{ __html: this.state.formErrorMessage }} /> </strong></p>
+        
       </section>
     );
 

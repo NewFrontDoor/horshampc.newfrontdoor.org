@@ -12,7 +12,7 @@ class HomePageWrapper extends Component {
     return (
       <section>
         <div className="main-wrapper wide">
-          {/*<Slider />*/}
+          <Slider />
           <HomePageContent />
         </div>
       </section>

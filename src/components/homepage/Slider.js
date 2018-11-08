@@ -2,27 +2,20 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 
-import slider1 from '../../assets/img/slider1.png';
-import slider2 from '../../assets/img/slider2.png';
+import slider1 from '../../assets/img/hpc-5140-gs.jpg';
+
 
 class Slider extends Component {
   constructor() {
     super();
     this.state = {
-      slides: [{
-        "src": slider1,
-        "alt": "Welcome to <Our Church>",
-        "caption": null
-      },
+      slides: [
       {
-        "src": slider2,
+        "src": slider1,
         "alt": "",
         "caption":
         {
-          "header": "Header",
-          "description": "Description",
-          "linkText": "Link div text",
-          "href": "#"
+          "header": "",
         }
       }]
     };
@@ -39,9 +32,9 @@ class Slider extends Component {
               <img className="img-responsive img-full-width" src={slide.src} width="1440" height="600" />
               <figcaption className="overlay overlay-30 text-center">
                 <div className="highlighted-slider-2-content">
-                  <h1 className="slider-title">{slide.caption.header}</h1>
-                  <p className="slider-description">{slide.caption.description}</p>
-                  <a href={slide.caption.href} className="btn btn-default">{slide.caption.linkText}</a>
+                  {slide.caption.header ? <h1 className="slider-title">{slide.caption.header}</h1> : "" }
+                  {slide.caption.description ? <p className="slider-description">{slide.caption.description}</p> : ""}
+                  {slide.caption.href ? <a href={slide.caption.href} className="btn btn-default">{slide.caption.linkText}</a> : ""}
                 </div>
               </figcaption>
             </figure>
