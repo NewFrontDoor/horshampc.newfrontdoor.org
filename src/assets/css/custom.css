@@ -54,3 +54,9 @@
 body{
   color: #000;
 }
+
+
+.latestSermon-img{
+  width: 100% !important;
+  height: 100% !important;
+}

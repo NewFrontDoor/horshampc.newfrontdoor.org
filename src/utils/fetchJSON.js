@@ -1,7 +1,7 @@
 import 'es6-promise/auto';
 import fetch from 'isomorphic-fetch';
 
-const DRUPAL_URL = "https://api-location.newfrontdoor.org/api/views/";
+const DRUPAL_URL = "https://api.horshampc.org.au/api/views/";
 const DRUPAL_SEARCH_SERMONS = DRUPAL_URL + "all_sermons_api?display_id=services_1&filters";
 
 //Example suffix: all_sermons_api?filters[preacher]=keith&filters[title]=reality

@@ -248,7 +248,7 @@ a {
 /*************************************************************/
 
 .progress-bar-primary {
-  background-color: #2ac5ee;
+  background-color: #91c2e3;
 }
 
 
@@ -258,7 +258,7 @@ a {
 /*************************************************************/
 
 .form-control:focus {
-  border-color: #2ac5ee;
+  border-color: #91c2e3;
 }
 
 
@@ -271,11 +271,11 @@ a {
 .text-color-light .social-networks-footer a:hover,
 .text-color-light .social-networks-footer a:focus,
 .text-color-light .social-networks-footer a:active {
-  color: #2ac5ee;
+  color: #91c2e3;
 }
 
 /** Text Colors **/
-.text-color-theme      { color: #2ac5ee; }
+.text-color-theme      { color: #91c2e3; }
 
 /** Background Colors **/
-.bg-color-theme        { background-color: #2ac5ee; }
+.bg-color-theme        { background-color: #91c2e3; }
