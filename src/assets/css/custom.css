@@ -12,7 +12,7 @@
     }
 }
 
-.sermon-search-button {
+.sermon-load-more, .sermon-search-button {
     padding: 2px 35px !important;
     border-color: #65AAD5;
     color: #65AAD5;
@@ -59,4 +59,28 @@ body{
 .latestSermon-img{
   width: 100% !important;
   height: 100% !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.image-center {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.person-name{
+  font-size: 24px;
+margin-bottom: 8px;
+margin-top: 10px;
+font-weight: 300;
+line-height: 24px;
+}
+
+.person-title{
+  font-size: 16px;
+  color: #a2a5a4;
+  text-transform: uppercase;
+  margin-bottom: 50px;
 }

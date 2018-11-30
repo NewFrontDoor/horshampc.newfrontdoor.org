@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
+import headerImg from '../../assets/img/contact-us.png';
 
 import validator from 'validator';
 
@@ -92,7 +93,7 @@ class ContactUs extends Component {
           </form>
           <p><strong><span dangerouslySetInnerHTML={{ __html: this.state.formErrorMessage }} /> </strong></p>
         </div>
-        
+
       </section>
     );
 
@@ -106,22 +107,11 @@ class ContactUs extends Component {
 
     return (
       <section>
-        <div id="top-content-region" className="top-content padding-top-15 padding-bottom-15 block-15 bg-color-grayLight1">
+        <div id="top-content-region" className="top-content block-15 bg-color-grayLight1">
           <div className="container">
             <div className="row">
-              <div id="top-content-left-region" className="top-content-left col-xs-12 col-md-6 text-center-sm">
-                <div id="page-title-block" className="page-title block">
-                  <h1>Contact Us</h1>
-                </div>
-              </div>
 
-              <div id="top-content-right-region" className="top-content-right col-xs-12 col-md-6 text-right text-center-sm">
-                <div id="page-breadcrumbs-block" className="page-breadcrumbs block">
-                  <div className="breadcrumbs">
-                    <a href="/">Home</a>
-                  </div>
-                </div>
-              </div>
+              <img className="img img-responsive" src={headerImg} alt="" />
             </div>
           </div>
         </div>
@@ -131,22 +121,22 @@ class ContactUs extends Component {
             <div className="row">
               <div id="main-content-region" className="main-content col-xs-12 col-md-8 col-md-offset-2">
 
-                <div id="block-block-54" class="block block-block">
+                <div id="block-block-54" className="block block-block">
 
 
-                  <div class="content">
+                  <div className="content">
                     If you have any questions about Horsham Presbyterian Church, want to visit us or would like more information on how to get involved, please contact us - we would love to hear from you.  </div>
                 </div>
 
 
-                <div id="block-block-45" class="block block-block">
+                <div id="block-block-45" className="block block-block">
 
 
-                  <div class="content">
-                    <div class="contacts">
-                      <div class="row">
+                  <div className="content">
+                    <div className="contacts">
+                      <div className="row">
 
-                        <div class="col-xs-12 col-sm-6">
+                        <div className="col-xs-12 col-sm-6">
                           <h5>Address</h5>
                           <p>Come visit us on Sundays @ 10am:</p>
                           <p>16 Kalkee Rd<br />
@@ -155,7 +145,7 @@ class ContactUs extends Component {
                           </p>
                         </div>
 
-                        <div class="col-xs-12 col-sm-6 margin-top-xs-40">
+                        <div className="col-xs-12 col-sm-6 margin-top-xs-40">
                           <h5>Contact Us</h5>
                           <p><b>Facebook:</b> &nbsp;<a href="https://www.facebook.com/horshampc/" target="_blank" rel="noreferrer noopener">/horshampc</a><br />
                             <b>Email:</b>&nbsp;<a href="mailto:luke.isham@pcv.org.au">luke.isham@pcv.org.au</a></p>

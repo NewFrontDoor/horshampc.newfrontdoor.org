@@ -7,6 +7,7 @@ class WhereToFindUs extends Component {
   render() {
     return (
       <section>
+        <div className="col-md-4 col-xs-12"></div>
         <div className="col-md-4 col-xs-12">
           <div className="region region-content-2-2">
             <div className="block block-block">

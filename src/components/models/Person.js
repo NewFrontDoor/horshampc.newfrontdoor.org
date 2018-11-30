@@ -7,7 +7,7 @@ class Person extends Component {
         return (
             <div className="person-container col-md-3">
                 <div className="person-image">
-                    <img className="image-center" src={this.props.image} alt={this.props.name} />
+                    <img className="img img-responsive image-center" src={this.props.image} alt={this.props.name} />
                 </div>
                 <div className="person-name text-center">
                     {this.props.name}

@@ -12,14 +12,14 @@ class HomePageContent extends Component {
         <div className="content-2 bg-color-white text-color-default" >
           <div className="container">
             <div className="row text-center">
-              
-              <br/>
+
+              <br />
               <h4>We meet on Sunday mornings at 10 am, to sing, pray, think, read the Bible and listen to a sermon. Afterwards we chat over light refreshments. You’re welcome to join us.</h4>
-<br/></div>
-<div className="row">
+              <br /></div>
+            <div className="row">
               <LatestSermon />
               <WhereToFindUs />
-              <UpcomingEvents />  
+              {/*<UpcomingEvents />  */}
             </div>
           </div>
         </div>
