@@ -153,7 +153,7 @@ class ContactUs extends Component {
                           <h5>Contact Us</h5>
                           <p><b>Facebook:</b> &nbsp;<a href="https://www.facebook.com/horshampc/" target="_blank" rel="noreferrer noopener">/horshampc</a><br />
                             <b>Email Minister:</b>&nbsp;<a href="mailto:luke.isham@pcv.org.au">luke.isham@pcv.org.au</a><br />
-                            <b>Session Clerk:</b>&nbsp;<a href="mailto:sessionclerk@horshampc.org">sessionclerk@horshampc.org</a><br />
+                            <b>Email Session Clerk:</b>&nbsp;<a href="mailto:sessionclerk@horshampc.org">sessionclerk@horshampc.org</a><br />
                             <b>Email Secretary:</b>&nbsp;<a href="mailto:secretary@horshampc.org">secretary@horshampc.org</a></p>
                         </div>
 
