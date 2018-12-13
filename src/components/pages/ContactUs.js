@@ -4,7 +4,7 @@ import headerImg from '../../assets/img/contact-us.png';
 
 import validator from 'validator';
 
-//import { postToWebform } from '../../utils/postToAPI';
+import { postToWebform } from '../../utils/postToAPI';
 
 class ContactUs extends Component {
   constructor() {
@@ -39,6 +39,9 @@ class ContactUs extends Component {
     if (validator.isEmpty(this.state.email) || !validator.isEmail(this.state.email)) {
       errorMessage += "Please enter a valid email address.<br/>";
     }
+    if (validator.isEmpty(this.state.message)) {
+      errorMessage += "Please enter your message.<br/>";
+    }
 
 
     if (errorMessage !== "") {
@@ -51,17 +54,17 @@ class ContactUs extends Component {
       /*handle posting to drupal and show success message*/
       //strip 4byte utf8 characters / emojis with .replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, '')
       var form = new FormData();
-      form.append("webform", "drupal-webform-uuid");
+      form.append("webform", "46569a2d-5af0-4a78-b8a4-5305a132f1ee");
       form.append("submission[data][1][values][0]", this.state.name.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
       form.append("submission[data][2][values][0]", this.state.email.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
-      form.append("submission[data][3][values][0]", this.state.message.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
-      form.append("submission[data][4][values][0]", this.state.subject.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
-      /*
+      form.append("submission[data][3][values][0]", this.state.subject.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
+      form.append("submission[data][4][values][0]", this.state.message.replace(/([\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2694-\u2697]|\uD83E[\uDD10-\uDD5D])/g, ''));
+
       var that = this;
       postToWebform(form, function (data) {
         that.setState({ submissionID: data.sid })
         that.setState({ formSubmitted: true })
-      })*/
+      })
     }
 
   }
@@ -70,7 +73,6 @@ class ContactUs extends Component {
 
     var contactForm = (
       <section>
-        <em>The form below is merely a placeholder for the moment.</em>
         <div id="block-block-54" className="block block-block">
           <form onSubmit={this.handleSubmit}><div><div className="form-item form-group form-type-textfield form-item-name">
             <label htmlFor="edit-name">Your name <span className="form-required" title="This field is required.">*</span></label>
@@ -85,13 +87,15 @@ class ContactUs extends Component {
               <input className="form-control form-text required" type="text" id="edit-subject" name="subject" size="60" maxLength="255" onChange={this.handleChange.bind(this)} value={this.state.subject} />
             </div>
             <div className="form-item form-group form-type-textarea form-item-message">
-              <label htmlFor="edit-message">Message</label>
+              <label htmlFor="edit-message">Message</label>&nbsp;<span className="form-required" title="This field is required.">*</span>
               <div className="form-textarea-wrapper"><textarea className="form-control form-textarea required" id="edit-message" name="message" cols="60" rows="5" onChange={this.handleChange.bind(this)} value={this.state.address}></textarea></div>
             </div>
 
             <div className="form-actions form-wrapper" id="edit-actions"><input className="btn btn-primary btn-sm form-submit" type="submit" id="edit-submit" name="submit" value="Send message" /></div></div>
           </form>
+          <p><em>This contact form is sent to the church leadership team.</em></p>
           <p><strong><span dangerouslySetInnerHTML={{ __html: this.state.formErrorMessage }} /> </strong></p>
+
         </div>
 
       </section>
@@ -148,7 +152,9 @@ class ContactUs extends Component {
                         <div className="col-xs-12 col-sm-6 margin-top-xs-40">
                           <h5>Contact Us</h5>
                           <p><b>Facebook:</b> &nbsp;<a href="https://www.facebook.com/horshampc/" target="_blank" rel="noreferrer noopener">/horshampc</a><br />
-                            <b>Email:</b>&nbsp;<a href="mailto:luke.isham@pcv.org.au">luke.isham@pcv.org.au</a></p>
+                            <b>Email Minister:</b>&nbsp;<a href="mailto:luke.isham@pcv.org.au">luke.isham@pcv.org.au</a><br />
+                            <b>Session Clerk:</b>&nbsp;<a href="mailto:sessionclerk@horshampc.org">sessionclerk@horshampc.org</a><br />
+                            <b>Email Secretary:</b>&nbsp;<a href="mailto:secretary@horshampc.org">secretary@horshampc.org</a></p>
                         </div>
 
                       </div>
