@@ -64,7 +64,10 @@ class Footer extends Component {
                     <div className="content">
                       <div className="footer-phone text-center">
                         <i className="icon ion-social-facebook-outline size-32 margin-bottom-20"></i>
-                        <p><a href="https://www.facebook.com/horshampc/" target="_blank" rel="noopener noreferrer">facebook.com/horshampc</a><br /></p>
+                        <i className="icon ion-social-rss-outline size-32 margin-bottom-20" style={{ marginLeft: "10px" }}></i>
+                        <p><a href="https://www.facebook.com/horshampc/" target="_blank" rel="noopener noreferrer">facebook.com/horshampc</a><br />
+                          <a href="https://itunes.apple.com/au/podcast/horsham-presbyterian-church/id1447573544?mt=2" target="_blank" rel="noreferrer noopener">Subscribe to Our Podcast</a>
+                        </p>
                       </div>  </div>
                   </div>  </div>
               </div> {/* /footer-third-column-region */}
