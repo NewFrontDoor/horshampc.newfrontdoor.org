@@ -21,26 +21,31 @@ class SermonSeriesPage extends Component {
             seriesImgThumb: null,
             seriesImgFull: null,
             sermonSeriesID: this.props.match.params.nid,
+            seriesTitle: null,
             loaded: false
         }
     }
 
     componentWillMount() {
         var that = this;
+        getFromDrupalAPI('all_sermon_series_api?filters[nid]=' + this.state.sermonSeriesID, function (data) {
+            that.setState({ seriesImgThumb: data[0].image, seriesImgFull: data[0].full_img, seriesTitle: data[0].node_title })
+        });
         getFromDrupalAPI('all_sermons_api?filters[sermonSeries]=' + this.state.sermonSeriesID, function (data) {
-            that.setState({ sermons: data, seriesImgThumb: data[0].series_img, seriesImgFull: data[0].series_full_img })
+            that.setState({ sermons: data })
         });
     }
 
 
     render() {
         var seriesTitle = "Series Title";
+        var noSermons = "";
         if (this.state.sermons) {
-
+            var seriesImg = this.state.seriesImgFull ? this.state.seriesImgFull : this.state.seriesImgThumb;
+            seriesTitle = this.state.seriesTitle;
+            var tdPadding = { padding: "0px 5px 0px 5px" };
             if (this.state.sermons.length > 0) {
-                var seriesImg = this.state.seriesImgFull ? this.state.seriesImgFull : this.state.seriesImgThumb;
-                seriesTitle = this.state.sermons[0].sermonseries;
-                var tdPadding = { padding: "0px 5px 0px 5px" };
+
                 var sermons = _.map(this.state.sermons, (sermon) => {
                     return (
                         <tr key={_.uniqueId()} className="odd even">
@@ -57,7 +62,8 @@ class SermonSeriesPage extends Component {
                 )
             }
             else {
-                var sermons = (<div className="content"><p>Sorry, this sermon series could not be found.</p>
+                var sermons = <tr></tr>;
+                noSermons = (<div className="content"><p>Sorry, this sermon series has no sermons associated with it or does not exist.</p>
                     <p>You can find all of our available sermons on <a href="/allsermons">this page.</a> </p></div>)
             }
 
@@ -115,6 +121,7 @@ class SermonSeriesPage extends Component {
                                                     </tbody>
                                                 </table>
                                                 <br />
+                                                {noSermons}
                                             </div>
 
                                         </div>
