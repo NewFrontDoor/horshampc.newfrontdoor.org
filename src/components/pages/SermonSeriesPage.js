@@ -44,7 +44,7 @@ class SermonSeriesPage extends Component {
                 var sermons = _.map(this.state.sermons, (sermon) => {
                     return (
                         <tr key={_.uniqueId()} className="odd even">
-                            {sermon.node_title ? <td style={tdPadding} dangerouslySetInnerHTML={{ __html: sermon.node_url }} /> : <td style={tdPadding}></td>}
+                            {sermon.node_title ? <td style={tdPadding}><a href={'/sermon/' + sermon.nid}>{decode(sermon.node_title)}</a></td> : <td style={tdPadding}></td>}
 
 
                             <td style={tdPadding}>{sermon.text ? decode(sermon.text) : ''}</td>
