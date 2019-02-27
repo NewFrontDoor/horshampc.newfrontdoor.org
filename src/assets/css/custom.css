@@ -104,3 +104,27 @@ line-height: 24px;
   text-transform: uppercase;
   margin-bottom: 50px;
 }
+
+.sermon-series-div{
+  width: 262.500px;
+  height: 287.500px;
+  margin-bottom: 15px !important;
+  
+}
+
+@media (max-width: 990px) {
+  .sermon-series-div{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+.sermon-series-thumb{
+  max-height: 232.500px !important;
+}
+
+.sermon-series-thumb-div{
+  width: 232.500px;
+  height: 232.500px;
+}

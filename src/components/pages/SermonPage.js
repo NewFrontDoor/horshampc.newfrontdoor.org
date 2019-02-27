@@ -114,7 +114,7 @@ class SermonPage extends Component {
                   <div className="breadcrumbs">
                     <a href="/">Home</a>
                     <span className="delimiter">›</span>
-                    <span title="" className="nolink">Resources</span>
+                    <span title="" className="nolink">Sermons</span>
                   </div>
                 </div>
               </div>

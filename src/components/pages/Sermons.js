@@ -12,7 +12,7 @@ class Sermons extends Component {
     super();
     this.state = {
       sermons: null,
-      recentSeries: null,
+      allSermonSeries: null,
       latestSermon: null
     }
   }
@@ -25,26 +25,26 @@ class Sermons extends Component {
       that.setState({ latestSermon: data[0] });
     });
 
-    getFromDrupalAPI('recent_series_api', function (data) {
-      that.setState({ recentSeries: data });
+    getFromDrupalAPI('all_sermon_series_api', function (data) {
+      that.setState({ allSermonSeries: data });
     });
 
   }
   render() {
 
-    if (!this.state.sermons || !this.state.latestSermon || !this.state.recentSeries) {
-      var recentSeries = <div>Loading, please wait.</div>;
+    if (!this.state.sermons || !this.state.latestSermon || !this.state.allSermonSeries) {
+      var allSermonSeries = <div>Loading, please wait.</div>;
       var latestSermon = <div>Loading, please wait.</div>
     }
     else {
-      var recentSeries = _.map(this.state.recentSeries, (series) => {
+      var allSermonSeries = _.map(this.state.allSermonSeries, (series) => {
         return (
-          <div key={_.uniqueId()} className="views-row views-row-1 views-row-odd views-row-first col-sm-3">
+          <div key={_.uniqueId()} className="views-row views-row-1 views-row-odd views-row-first col-sm-6 col-md-3 sermon-series-div">
 
-            <div className="views-field views-field-field-thumbnail-image">
+            <div className="views-field views-field-field-thumbnail-image sermon-series-thumb-div">
               <div className="field-content">
                 <a href={"/series/" + series.series_id}>
-                  <img src={series.series_img} width="300" height="300" alt="" /></a>
+                  <img className="sermon-series-thumb" src={series.series_img} width="300" height="300" alt="" /></a>
               </div>
             </div>
             <div className="views-field views-field-title">
@@ -251,7 +251,7 @@ class Sermons extends Component {
 
               <div id="block-views-sermon-series-block-1" className="block block-views">
 
-                <h2 className="header-lightBlue text-center-sm">Recent Series</h2>
+                <h2 className="header-lightBlue text-center-sm">All Sermons Series</h2>
 
                 <div className="content">
                   <div className="view view-sermon-series view-id-sermon_series view-display-id-block_1 row">
@@ -259,7 +259,7 @@ class Sermons extends Component {
 
 
                     <div className="view-content">
-                      {recentSeries}
+                      {allSermonSeries}
                     </div>
 
 
