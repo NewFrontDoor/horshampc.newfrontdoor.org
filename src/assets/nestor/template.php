@@ -54,7 +54,7 @@ function nestor_preprocess_html(&$variables) {
   drupal_add_css($path . '/css/color/' . $color . '.css', array('group' => CSS_THEME, 'type' => 'file', 'id' => 'themeColor'));
   
   // external javascript for google maps
-  drupal_add_js('https://maps.google.com/maps/api/js?key=AIzaSyBYC4jJy1LD1awmEz-zbi6kL5OWoVDvW4o', 'external');
+  drupal_add_js('https://maps.google.com/maps/api/js?key=AIzaSyC5Ci6YtP61rpEi7IHAL3Zt4vmA9HW1IM8', 'external');
 
   // Check if the Sticky Header is activated or not and import the JS files to make it work
   if (theme_get_setting('sticky_header') === "on") {
