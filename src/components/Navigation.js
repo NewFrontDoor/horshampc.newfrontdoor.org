@@ -89,11 +89,7 @@ class Navigation extends Component {
                                     <div className="tb-megamenu-column-inner mega-inner clearfix">
                                       <ul className="tb-megamenu-subnav mega-nav level-1 items-4">
                                         <li className="tb-megamenu-item level-2 mega">
-                                          <a href="#" title="Community Life"></a>
-                                        </li>
-
-                                        <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/GospelAndCulture" >Gospel and Culture</a>
+                                          <a href="#" title=""></a>
                                         </li>
 
                                         <li className="tb-megamenu-item level-2 mega">
@@ -156,9 +152,10 @@ class Navigation extends Component {
                                           <a href="/WhatToExpect" >What to expect at Church</a>
                                         </li>
 
+                                        {/*hidden pending update
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/Staff" >Staff</a>
-                                        </li>
+                                      </li>*/}
 
 
                                       </ul>
@@ -177,6 +174,9 @@ class Navigation extends Component {
                                         </li>
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="http://www.pcv.org.au/" target="_blank" rel="noreferrer noopener">PCV</a>
+                                        </li>
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/Vacancy">Vacancy: Pastor</a>
                                         </li>
                                       </ul>
                                     </div>

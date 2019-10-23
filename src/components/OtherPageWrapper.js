@@ -13,13 +13,13 @@ import SermonSeriesPage from './pages/SermonSeriesPage';
 //import OurPeople from './pages/OurPeople';
 import VisionStatement from './pages/VisionStatement';
 import OrderOfService from './pages/OrderOfService';
-import GospelAndCulture from './pages/GospelAndCulture';
 import Links from './pages/Links';
 import WhatToExpect from './pages/WhatToExpect';
 import About from './pages/About';
 import Staff from './pages/Staff.js';
 import ShortHistory from './pages/ShortHistory';
 import Jesus from './pages/Jesus';
+import Vacancy from './pages/Vacancy';
 
 
 import ContactUs from './pages/ContactUs';
@@ -40,14 +40,14 @@ class OtherPageWrapper extends Component {
           <Route exact path="/VisionStatement" component={VisionStatement} />
           <Route exact path="/OrderOfService" component={OrderOfService} />
           <Route exact path="/VisionStatement" component={VisionStatement} />
-          <Route exact path="/GospelAndCulture" component={GospelAndCulture} />
           <Route exact path="/WhatToExpect" component={WhatToExpect} />
           <Route exact path="/About" component={About} />
-          <Route exact path="/Staff" component={Staff} />
+          {/*hidden pending update <Route exact path="/Staff" component={Staff} />*/}
           <Route exact path="/Links" component={Links} />
           <Route exact path="/ContactUs" component={ContactUs} />
           <Route exact path="/ShortHistory" component={ShortHistory} />
           <Route exact path="/Jesus" component={Jesus} />
+          <Route exact path="/Vacancy" component={Vacancy} />
 
           <Route path="/*" component={OtherPageContent} />
         </Switch>

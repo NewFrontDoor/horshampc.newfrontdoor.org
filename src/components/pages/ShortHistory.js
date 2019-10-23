@@ -28,22 +28,16 @@ class ShortHistory extends Component {
                                                         <div className="col-md-12">
 
                                                             <p className="padding-top-15">
-                                                                Gold brought all sorts of people to Western Victoria, including Presbyterians.
+                                                            Gold brought all sorts of people to Western Victoria, including Presbyterians.
                                                             </p>
 
                                                             <p className="padding-top-15">
-                                                                St Andrews, Horsham was founded in 1875. However after the formation of the Uniting Church in 1977 the continuing Presbyterians church-planted back into Horsham from Marnoo in 1980, originally meeting in the Anglican church hall before moving the old Presbyterian building from Wonwondah onto the existing Kalkee road site in 1984.
+                                                            St Andrews, Horsham was founded in 1875. However after the formation of the Uniting Church in 1977 the continuing Presbyterians church-planted back into Horsham from Marnoo in 1980, originally meeting in the Anglican church hall before moving the old Presbyterian building from Wonwondah onto the existing Kalkee road site in 1984.
                                                             </p>
 
                                                             <p className="padding-top-15">
-                                                                Horsham Presbyterian Church belongs to the Ballarat Presbytery, and previous ministers included Don Elliot (1985-1991), Wally Rakete (1994-1999), John Brennan (2002-2006) and Willem Vandenberg (2007-2013).
+                                                            Horsham Presbyterian Church belongs to the Ballarat Presbytery, and previous ministers included Don Elliot (1985-1991), Wally Rakete (1994-1999), John Brennan (2002-2006), Willem Vandenberg (2007-2013) and Luke Isham (2014-2019).
                                                             </p>
-
-                                                            <p className="padding-top-15">
-                                                                Luke Isham, who moved up from Tasmania was appointed as the minister in January 2015.
-                                                            </p>
-
-
                                                         </div>
 
 

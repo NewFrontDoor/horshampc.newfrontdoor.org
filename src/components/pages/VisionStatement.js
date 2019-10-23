@@ -40,7 +40,7 @@ class VisionStatement extends Component {
                                                                 <li>Praying</li>
                                                                 <li>Welcoming people</li>
                                                                 <li>A place for Training leaders</li>
-                                                                <li>A reputation for good signing</li>
+                                                                <li>A reputation for good singing</li>
                                                                 <li>Practical heartfelt preaching</li>
                                                                 <li>Financially self-sufficient</li>
                                                                 <li>A place of thinking about and speaking carefully about God</li>

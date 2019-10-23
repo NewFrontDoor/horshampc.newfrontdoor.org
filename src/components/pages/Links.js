@@ -41,7 +41,6 @@ class Links extends Component {
 
                                                             <p><a href="http://www.presbyterian.org.au/" target="_blank" rel="noreferrer noopener">Presbyterian Church of Australia&nbsp;</a></p>
                                                             <p><a href="http://pcv.org.au/" target="_blank" rel="noreferrer noopener">Presbyterian Church of Victoria</a></p>
-                                                            <p><a href="http://kanivanhillpc.org/">Presbyterian&nbsp;Church of Kaniva-Nhill</a></p>
                                                             <p><a href="http://www.cefc.org.au/" target="_blank" rel="noreferrer noopener">Horsham Christian Emergency Food Centre</a></p>
                                                             <p><a href="https://www.facebook.com/pages/Operation-1914/146968888758625?fref=ts" target="_blank" rel="noreferrer noopener">Operation 19:14&nbsp;</a></p>
                                                             <p><a href="http://www.apwm.org.au/" target="_blank" rel="noreferrer noopener">Australian Presbyterian World Mission&nbsp;</a></p>
