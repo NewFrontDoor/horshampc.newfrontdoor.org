@@ -95,6 +95,9 @@ class Navigation extends Component {
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/Links" >Links</a>
                                         </li>
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <span>Woman, why are you weeping?</span>
+                                        </li>
                                       </ul>
                                     </div>
                                   </div>
@@ -152,10 +155,9 @@ class Navigation extends Component {
                                           <a href="/WhatToExpect" >What to expect at Church</a>
                                         </li>
 
-                                        {/*hidden pending update
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="/Staff" >Staff</a>
-                                      </li>*/}
+                                      </li>
 
 
                                       </ul>
@@ -174,9 +176,6 @@ class Navigation extends Component {
                                         </li>
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="http://www.pcv.org.au/" target="_blank" rel="noreferrer noopener">PCV</a>
-                                        </li>
-                                        <li className="tb-megamenu-item level-2 mega">
-                                          <a href="/Vacancy">Vacancy: Pastor</a>
                                         </li>
                                       </ul>
                                     </div>

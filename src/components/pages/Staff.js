@@ -2,7 +2,9 @@
 import React, { Component } from 'react';
 
 import Person from '../models/Person';
-import LukeImg from '../../assets/img/luke-at-pilgrim-hill-launch-2010.jpg'
+import MaleImg from '../../assets/img/people/Male.png';
+import FemaleImg from '../../assets/img/people/Female.png';
+import TylerImg from '../../assets/img/Tyler.jpg';
 
 class Staff extends Component {
 
@@ -42,11 +44,11 @@ class Staff extends Component {
                                                     <div className="row">
                                                         <div className="col-md-12">
 
-                                                            <Person name="Luke Isham" image={LukeImg} />
-                                                            <div className="col-md-9">
-                                                                <p>Luke is married to Amy and has two young kids. He was inducted as the new minister of Horsham Presbyterian Church in January 2015.</p>
-                                                                <p>Originally Luke was ordained in the Anglican Diocese of Tasmania in 2009 after studying at Ridley Theological College in Melbourne. He jumped ship in 2012 to become a Presbyterian minister, which took three years of extra part time study. While doing this extra study, Luke worked first for Soul Presbyterian Church and then for University Fellowship of Christians (AFES).</p>
-                                                            </div>
+                                                            <Person name="Pastor: TBA" image={MaleImg} blurb="Short blurb about the new pastor." />
+
+                                                            <Person name="Volunteer Women’s Worker: Barbara" image={FemaleImg} blurb="Barbara grew up and spent most of her adult life in far western NSW.  After retiring from a career in education, she moved to the Wimmera to support her family. She has three daughters, a grandson and a granddaughter. In between caring for family and tutoring, she is completing a Master of Divinity at Ridley College. God has done marvellous things in Barbara’s life, and she is passionate about wanting everyone to share in the gospel." />
+
+                                                            <Person name="METRO Prepare Trainee: Tyler" image={TylerImg} blurb="Tyler was born it Taree NSW and lived a sporadic lifestyle, constantly moving between states and towns until he moved to Horsham in 2009. He was baptised in November 2019 and now he is hoping to become a minister to help teach and spread the word of God." />
 
 
                                                         </div>

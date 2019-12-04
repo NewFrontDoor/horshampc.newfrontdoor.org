@@ -128,3 +128,13 @@ line-height: 24px;
   width: 232.500px;
   height: 232.500px;
 }
+
+.person-image>img{
+  max-height: 300px;
+}
+@media (max-width: 991px){
+  .person-blurb{
+  text-align: center;
+  
+  }
+}
