@@ -23,6 +23,7 @@ import Jesus from './pages/Jesus';
 
 
 import ContactUs from './pages/ContactUs';
+import WomanWhyAreYouWeeping from './pages/WomanWhyAreYouWeeping';
 
 
 class OtherPageWrapper extends Component {
@@ -47,6 +48,7 @@ class OtherPageWrapper extends Component {
           <Route exact path="/ContactUs" component={ContactUs} />
           <Route exact path="/ShortHistory" component={ShortHistory} />
           <Route exact path="/Jesus" component={Jesus} />
+          <Route exact path="/WomanWhyAreYouWeeping" component={WomanWhyAreYouWeeping} />
 
           <Route path="/*" component={OtherPageContent} />
         </Switch>

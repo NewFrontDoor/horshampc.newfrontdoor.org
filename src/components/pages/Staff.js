@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 import Person from '../models/Person';
 import MaleImg from '../../assets/img/people/Male.png';
-import FemaleImg from '../../assets/img/people/Female.png';
+import BarbaraImg from '../../assets/img/Barbara.png';
 import TylerImg from '../../assets/img/Tyler.jpg';
 
 class Staff extends Component {
@@ -46,7 +46,7 @@ class Staff extends Component {
 
                                                             <Person name="Pastor: TBA" image={MaleImg} blurb="Short blurb about the new pastor." />
 
-                                                            <Person name="Volunteer Women’s Worker: Barbara" image={FemaleImg} blurb="Barbara grew up and spent most of her adult life in far western NSW.  After retiring from a career in education, she moved to the Wimmera to support her family. She has three daughters, a grandson and a granddaughter. In between caring for family and tutoring, she is completing a Master of Divinity at Ridley College. God has done marvellous things in Barbara’s life, and she is passionate about wanting everyone to share in the gospel." />
+                                                            <Person name="Volunteer Women’s Worker: Barbara" image={BarbaraImg} blurb="Barbara grew up and spent most of her adult life in far western NSW.  After retiring from a career in education, she moved to the Wimmera to support her family. She has three daughters, a grandson and a granddaughter. In between caring for family and tutoring, she is completing a Master of Divinity at Ridley College. God has done marvellous things in Barbara’s life, and she is passionate about wanting everyone to share in the gospel." />
 
                                                             <Person name="METRO Prepare Trainee: Tyler" image={TylerImg} blurb="Tyler was born it Taree NSW and lived a sporadic lifestyle, constantly moving between states and towns until he moved to Horsham in 2009. He was baptised in November 2019 and now he is hoping to become a minister to help teach and spread the word of God." />
 
