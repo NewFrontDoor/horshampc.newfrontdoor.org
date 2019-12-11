@@ -19,7 +19,7 @@ import About from './pages/About';
 import Staff from './pages/Staff.js';
 import ShortHistory from './pages/ShortHistory';
 import Jesus from './pages/Jesus';
-//import Vacancy from './pages/Vacancy';
+import Vacancy from './pages/Vacancy';
 
 
 import ContactUs from './pages/ContactUs';
@@ -48,6 +48,7 @@ class OtherPageWrapper extends Component {
           <Route exact path="/ContactUs" component={ContactUs} />
           <Route exact path="/ShortHistory" component={ShortHistory} />
           <Route exact path="/Jesus" component={Jesus} />
+          <Route exact path="/Vacancy" component={Vacancy} />
           <Route exact path="/WomanWhyAreYouWeeping" component={WomanWhyAreYouWeeping} />
 
           <Route path="/*" component={OtherPageContent} />

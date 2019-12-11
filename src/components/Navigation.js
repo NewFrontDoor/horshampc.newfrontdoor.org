@@ -177,6 +177,9 @@ class Navigation extends Component {
                                         <li className="tb-megamenu-item level-2 mega">
                                           <a href="http://www.pcv.org.au/" target="_blank" rel="noreferrer noopener">PCV</a>
                                         </li>
+                                        <li className="tb-megamenu-item level-2 mega">
+                                          <a href="/Vacancy">Vacancy: Pastor</a>
+                                        </li>
                                       </ul>
                                     </div>
                                   </div>
