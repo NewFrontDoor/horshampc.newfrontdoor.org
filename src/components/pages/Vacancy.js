@@ -37,17 +37,17 @@ class Vacancy extends Component {
                     <div className="content">
                       <div className="node node-page clearfix">
                         <div className="content">
-                          
-                            <h3>Vacancy: Full time Pastor wanted</h3>
-                            <p>
-                                Our pastor is taking up a call in the city next year and so we are seeking a new pastor who loves Jesus, and God's people and is keen for regional ministry. Horsham Presbyterian Church is an appointment Parish which means the selection committee recommends a name to Presbytery. The initial appointment would be for three years full time.
+
+                          <h3>Vacancy: Full time Pastor wanted</h3>
+                          <p>
+                            Our pastor is taking up a call in the city next year and so we are seeking a new pastor who loves Jesus, and God's people and is keen for regional ministry. Horsham Presbyterian Church is an appointment Parish which means the selection committee recommends a name to Presbytery. The initial appointment would be for three years full time.
                             </p>
-                            <p>
-                            To express interest download the <a href={congregationalProfile} target="_blank">congregational profile</a> and contact the interim Moderator, Rev Toby McIntosh.
+                          <p>
+                            To express interest download the <a href={congregationalProfile} target="_blank">congregational profile</a> and contact the interim Moderator, Rev Rod Waterhouse.
                             </p>
 
 
-                          
+
 
                         </div>
 

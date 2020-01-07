@@ -41,9 +41,9 @@ class Footer extends Component {
                     <div className="content">
                       <div className="footer-mail text-center">
                         <i className="icon ion-ios7-contact-outline size-32 margin-bottom-20"></i>
-                        <p>Rev. Luke Isham<br />
-                          <a href="mailto:luke.isham@pcv.org.au">luke.isham@pcv.org.au</a><br />
-                          03 5379 3898<br />
+                        <p>
+                          <a href="mailto:sessionclerk@horshampc.org">sessionclerk@horshampc.org</a><br />
+                          0437 672 530<br />
                           PO Box 985, Horsham, 3402<br /><br />
 
                           Sunday 10 am <br />(9:30 am Good Friday & Christmas Day)
