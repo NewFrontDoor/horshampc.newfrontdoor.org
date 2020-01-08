@@ -43,7 +43,7 @@ class Footer extends Component {
                         <i className="icon ion-ios7-contact-outline size-32 margin-bottom-20"></i>
                         <p>
                           <a href="mailto:sessionclerk@horshampc.org">sessionclerk@horshampc.org</a><br />
-                          0437 672 530<br />
+                          0423 306 774<br />
                           PO Box 985, Horsham, 3402<br /><br />
 
                           Sunday 10 am <br />(9:30 am Good Friday & Christmas Day)
