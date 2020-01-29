@@ -65,7 +65,7 @@ class Sermons extends Component {
         <div>
           {this.state.latestSermon.node_title ? <span><a href={`/sermon/${this.state.latestSermon.nid}`}>{this.state.latestSermon.node_title}</a></span> : <span><a href={`/sermon/${this.state.latestSermon.nid}`}>Untitled</a></span>}  </div>
         <div className="views-field views-field-field-preacher">
-          <div className="field-content">{decode(this.state.latestSermon.preacher)}</div>  </div>  </div>);
+          <div className="field-content">{this.state.latestSermon.preacher ? decode(this.state.latestSermon.preacher) : ''}</div>  </div>  </div>);
 
       var currentSeries = (<section><div className="views-field views-field-field-thumbnail-image">
         <div className="field-content">
