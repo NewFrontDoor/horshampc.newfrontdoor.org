@@ -150,7 +150,7 @@ class Sermons extends Component {
             {sermon.node_title ? <td style={tdPadding}><a href={`/sermon/${sermon.nid}`}>{sermon.node_title}</a></td> : <td style={tdPadding}><a href={`/sermon/${sermon.nid}`}>Untitled</a></td>}
             {sermon.sermonseries ? <td style={tdPadding}><a href={'/series/' + sermon.series_id}>{decode(sermon.sermonseries)}</a></td> : <td style={tdPadding}></td>}
             <td style={tdPadding}>{sermon.text ? decode(sermon.text) : ''}</td>
-            <td style={tdPadding}>{decode(sermon.preacher)}</td>
+            <td style={tdPadding}>{sermon.preacher ? decode(sermon.preacher) : ''}</td>
             <td style={tdPadding}>{sermon.datepreached}</td>
             <td style={tdPadding}><a href={sermon.url} target="_blank" rel="noopener noreferrer"><i className="fa fa-download"></i></a></td>
           </tr>
