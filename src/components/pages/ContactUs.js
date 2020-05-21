@@ -152,6 +152,7 @@ class ContactUs extends Component {
                         <div className="col-xs-12 col-sm-6 margin-top-xs-40">
                           <h5>Contact Us</h5>
                           <p><b>Facebook:</b> &nbsp;<a href="https://www.facebook.com/horshampc/" target="_blank" rel="noreferrer noopener">/horshampc</a><br />
+                            <b>Email Pastor:</b>&nbsp;<a href="mailto:greg@horshampc.org">greg@horshampc.org</a><br />
                             <b>Email Session Clerk:</b>&nbsp;<a href="mailto:sessionclerk@horshampc.org">sessionclerk@horshampc.org</a><br />
                             <b>Email Secretary:</b>&nbsp;<a href="mailto:secretary@horshampc.org">secretary@horshampc.org</a></p>
                         </div>

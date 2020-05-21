@@ -44,7 +44,7 @@ class Staff extends Component {
                                                     <div className="row">
                                                         <div className="col-md-12">
 
-                                                            <Person name="Pastor: TBA" image={MaleImg} blurb="Short blurb about the new pastor." />
+                                                            <Person name="Pastor: Rev. Greg Matthews" image={MaleImg} blurb="" />
 
                                                             <Person name="Volunteer Women’s Worker: Barbara" image={BarbaraImg} blurb="Barbara grew up and spent most of her adult life in far western NSW.  After retiring from a career in education, she moved to the Wimmera to support her family. She has three daughters, a grandson and a granddaughter. In between caring for family and tutoring, she is completing a Master of Divinity at Ridley College. God has done marvellous things in Barbara’s life, and she is passionate about wanting everyone to share in the gospel." />
 

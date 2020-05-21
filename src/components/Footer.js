@@ -42,7 +42,8 @@ class Footer extends Component {
                       <div className="footer-mail text-center">
                         <i className="icon ion-ios7-contact-outline size-32 margin-bottom-20"></i>
                         <p>
-                          <a href="mailto:sessionclerk@horshampc.org">sessionclerk@horshampc.org</a><br />
+                          Rev. Greg Matthews<br />
+                          <a href="mailto:greg@horshampc.org">greg@horshampc.org</a><br />
                           0423 306 774<br />
                           PO Box 985, Horsham, 3402<br /><br />
 
