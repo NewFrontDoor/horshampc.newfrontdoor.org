@@ -5,7 +5,6 @@ import AudioPlayer from 'react-responsive-audio-player';
 import { decode } from 'he'
 
 import { getFromDrupalAPI } from '../../utils/fetchJSON';
-
 import '../../assets/css/audioplayer.css'
 
 class SermonPage extends Component {
@@ -75,7 +74,7 @@ class SermonPage extends Component {
               <br /><div className="field field-name-field-sermon-series field-type-node-reference field-label-above">
                 <div className="field-label">Sermon Series:&nbsp;</div>
                 <div className="field-items">
-                  <div className="field-item even">{sermon.sermonseries ? <a href={'/series/' + sermon.series_id}>{decode(sermon.sermonseries)}</a> : ""}</div>
+                  <div className="field-item even">{sermon.sermonseries ? <a href={'/series/' + sermon.series_id}>{decode(sermon.sermonseries)}</a> : "Not part of a series"}</div>
                 </div>
               </div>
               <br /><div className="field field-name-field-bible-book-s- field-type-taxonomy-term-reference field-label-above">

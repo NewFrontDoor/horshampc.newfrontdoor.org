@@ -5,7 +5,7 @@ import AudioPlayer from 'react-responsive-audio-player';
 import { decode } from 'he'
 
 import { getFromDrupalAPI } from '../../utils/fetchJSON';
-
+import SermonImg from '../../assets/img/HorshamPC-Sermon.png'
 import '../../assets/css/audioplayer.css'
 
 class LatestSermon extends Component {
@@ -37,7 +37,7 @@ class LatestSermon extends Component {
 
                   <div className="views-field views-field-field-front-page-thumbnail">
                     <div className="field-content">
-                      <img className="latestSermon-img" src={sermon.sermon_img ? sermon.sermon_img : sermon.series_img} width="600" height="450" />
+                      <img className="latestSermon-img" src={sermon.sermon_img ? sermon.sermon_img : sermon.series_img ? sermon.series_img : SermonImg} width="360" height="360" />
                     </div>
                   </div>
 

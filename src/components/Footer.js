@@ -44,7 +44,7 @@ class Footer extends Component {
                         <p>
                           Rev. Greg Matthews<br />
                           <a href="mailto:greg@horshampc.org">greg@horshampc.org</a><br />
-                          0423 306 774<br />
+                          0412 390 607<br />
                           PO Box 985, Horsham, 3402<br /><br />
 
                           Sunday 10 am <br />(9:30 am Good Friday & Christmas Day)
